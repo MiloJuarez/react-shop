@@ -1,7 +1,13 @@
 import React from "react";
+import "../styles/NotFound.scss";
 
 const NotFound = () => {
-    return <div>No encontrado, error 404.</div>;
+    return (
+        <div class="error-container">
+            <p class="error-message">Recurso no encontrado :(</p>
+            <p class="error-message animated hinge fw-light">404</p>
+        </div>
+    );
 };
 
 export default NotFound;

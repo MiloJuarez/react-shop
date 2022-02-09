@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Login.scss";
+import PrimaryInputSubmit from "../components/PrimaryInputSubmit";
 
 const App = () => {
     return (
@@ -34,11 +35,7 @@ const App = () => {
                         class="input input-password"
                     />
 
-                    <input
-                        type="submit"
-                        value="Log in"
-                        class="primary-button login-button"
-                    />
+                    <PrimaryInputSubmit value={"Log in"} />
 
                     <a href="/">Forgot my password</a>
                 </form>

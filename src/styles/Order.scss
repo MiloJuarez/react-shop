@@ -1,0 +1,27 @@
+@use "vars";
+
+.order {
+    display: grid;
+    margin-bottom: 12px;
+    padding: 0 24px;
+    grid-template-columns: auto 1fr auto;
+    gap: 16px;
+    align-items: center;
+    border-radius: 8px;
+}
+.order p:first-child {
+    display: flex;
+    flex-direction: column;
+}
+.order p span:first-child {
+    font-size: var(--md);
+    font-weight: bold;
+}
+.order p span:nth-child(2) {
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+.order p:nth-child(2) {
+    text-align: end;
+    font-weight: bold;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/RecoveryPassword.scss";
+import PrimaryButton from "../components/PrimaryButton";
 
 const RecoveryPassword = () => {
     return (
@@ -21,7 +22,7 @@ const RecoveryPassword = () => {
                     <img src="./assets/icons/email.svg" alt="Email" />
                 </div>
 
-                <button className="primary-button login-button">Login</button>
+                <PrimaryButton label={"Login"} />
 
                 <p className="resend">
                     <span>Didn't receive the email?</span>

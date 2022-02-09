@@ -1,0 +1,51 @@
+@use "vars";
+
+.login {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+}
+.form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+.logo {
+    display: none;
+    width: 150px;
+    margin-bottom: 48px;
+    justify-self: center;
+}
+.form,
+.form div {
+    display: flex;
+    flex-direction: column;
+}
+.label {
+    margin-bottom: 4px;
+    font-size: var(--sm);
+    font-weight: bold;
+}
+.input {
+    height: 30px;
+    margin-bottom: 12px;
+    padding: 6px;
+    font-size: var(--md);
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+}
+.input-name,
+.input-email,
+.input-password {
+    margin-bottom: 22px;
+}
+@media (max-width: 640px) {
+    .form-container {
+        height: 100vh;
+    }
+    .form {
+        justify-content: space-between;
+    }
+}

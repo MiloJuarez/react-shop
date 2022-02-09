@@ -1,0 +1,25 @@
+@use "vars";
+
+.shopping-cart {
+    display: grid;
+    margin-bottom: 24px;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    gap: 16px;
+}
+.shopping-cart p:nth-child(2) {
+    color: var(--very-light-pink);
+}
+.shopping-cart p:nth-child(3) {
+    font-size: var(--md);
+    font-weight: bold;
+}
+.shopping-cart figure {
+    margin: 0;
+}
+.shopping-cart figure img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}

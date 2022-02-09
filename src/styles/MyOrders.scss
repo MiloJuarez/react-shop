@@ -1,0 +1,15 @@
+.my-order {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+}
+.my-order-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+.my-order-content {
+    display: flex;
+    flex-direction: column;
+}

@@ -7,17 +7,17 @@
     align-items: center;
     gap: 16px;
 }
-.ProductItem p:nth-child(2) {
+.ProductItem__text--light {
     color: var(--very-light-pink);
 }
-.ProductItem p:nth-child(3) {
+.ProductItem__text--bold {
     font-size: var(--md);
     font-weight: bold;
 }
-.ProductItem figure {
+.ProductItem__figure {
     margin: 0;
 }
-.ProductItem figure img {
+.ProductItem__figure img {
     width: 70px;
     height: 70px;
     border-radius: 20px;

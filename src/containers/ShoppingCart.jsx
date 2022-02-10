@@ -8,7 +8,7 @@ import Title from "../components/Title";
 const ShoppingCart = () => {
     return (
         <aside className="ShoppingCart">
-            <div className="ShoppingCart-title-container">
+            <div className="ShoppingCart__title">
                 <img src="./assets/icons/arrow.svg" alt="arrow" />
                 <Title title={"My Shopping Cart"} />
             </div>
@@ -44,11 +44,15 @@ const ShoppingCart = () => {
                     <ButtonRemoveProduct />
                 </ProductItem>
 
-                <article className="ShoppingCart-orderItem">
-                    <p>
-                        <span>Total</span>
+                <article className="ShoppingCart-orderItem--flex">
+                    <p className="ShoppingCart-orderItem__text">
+                        <span className="ShoppingCart-orderItem__text--medium">
+                            Total
+                        </span>
                     </p>
-                    <p>$115.00</p>
+                    <p className="ShoppingCart-orderItem__text ShoppingCart-orderItem__text--end">
+                        $115.00
+                    </p>
                 </article>
 
                 <PrimaryButton label={"Checkout"} />

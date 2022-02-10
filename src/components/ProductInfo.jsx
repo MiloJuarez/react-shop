@@ -4,12 +4,22 @@ import "../styles/ProductInfo.scss";
 const ProductInfo = ({ product }) => {
     return (
         <>
-            <img src={product.image} alt={product.name} />
+            <img
+                src={product.image}
+                alt={product.name}
+                className="ProductInfo__image"
+            />
             <div className="ProductInfo">
-                <p>${product.price}</p>
-                <p>{product.name}</p>
-                <p>{product.description}</p>
-                <button className="primary-button add-to-cart-button">
+                <p className="ProductInfo__text ProductInfo__text--small ProductInfo__text--bold ProductInfo__text--mb4">
+                    ${product.price}
+                </p>
+                <p className="ProductInfo__text ProductInfo__text--medium ProductInfo__text--bold ProductInfo__text--light ProductInfo__text--mb36">
+                    {product.name}
+                </p>
+                <p className="ProductInfo__text ProductInfo__text--small ProductInfo__text--mb36">
+                    {product.description}
+                </p>
+                <button className="ProductInfo__button ProductInfo__button--flex">
                     <img
                         src="./assets/icons/bt_add_to_cart.svg"
                         alt="add to cart"

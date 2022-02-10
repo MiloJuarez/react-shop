@@ -6,7 +6,7 @@
     width: 360px;
     padding-bottom: 24px;
 }
-.ProductDetail-close {
+.ProductDetail__close-icon {
     position: absolute;
     width: 14px;
     height: 14px;
@@ -18,12 +18,6 @@
     background: var(--white);
     cursor: pointer;
     z-index: 2;
-}
-.ProductDetail > img:nth-child(2) {
-    width: 100%;
-    height: 360px;
-    object-fit: cover;
-    border-radius: 0 0 20px 20px;
 }
 @media (max-width: 640px) {
     .ProductDetail {

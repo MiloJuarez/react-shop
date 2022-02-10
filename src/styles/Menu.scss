@@ -1,0 +1,35 @@
+@use "vars";
+
+.Menu {
+    width: 100px;
+    height: auto;
+    padding: 20px 20px 0 20px;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 5px;
+}
+.Menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.Menu ul li {
+    text-align: end;
+}
+.Menu ul li:nth-child(1),
+.Menu ul li:nth-child(2) {
+    font-weight: bold;
+}
+.Menu ul li:last-child {
+    padding-top: 20px;
+    border-top: 1px solid var(--very-light-pink);
+}
+.Menu ul li:last-child a {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+.Menu ul li a {
+    display: inline-block;
+    color: var(--black);
+    text-decoration: none;
+    margin-bottom: 20px;
+}

@@ -1,15 +1,15 @@
-.error-container {
+.NotFound-container {
     display: grid;
     place-items: center;
     margin-top: 20vh;
 }
-.error-message {
+.NotFound--message {
     margin: 0;
     font-size: 3rem;
     font-weight: bold;
     color: var(--hospital-green);
 }
-.animated {
+.NotFound--message__animated {
     font-size: 6rem;
     font-weight: lighter;
     animation-duration: 2.5s;

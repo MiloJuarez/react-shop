@@ -4,8 +4,8 @@ import "../styles/Home.scss";
 
 const Home = () => {
     return (
-        <section class="main-container">
-            <div class="cards-container">
+        <section class="Home-container">
+            <div class="Home-cards-container">
                 <ProductCard
                     product={{
                         image: "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",

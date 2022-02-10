@@ -5,13 +5,13 @@ import Title from "../components/Title";
 
 const CreateAccount = () => {
     return (
-        <div className="login">
-            <div className="form-container">
+        <div className="CreateAccount">
+            <div className="CreateAccount-container">
                 <Title title={"Create account"} />
 
-                <form action="/" className="form">
+                <form action="/" className="CreateAccount-form">
                     <div>
-                        <label for="name" className="label">
+                        <label for="name" className="CreateAccount-form--label">
                             Name
                         </label>
                         <input
@@ -19,10 +19,13 @@ const CreateAccount = () => {
                             name="name"
                             id="name"
                             placeholder="Milo"
-                            className="input input-name"
+                            className="CreateAccount-form--input input-name"
                         />
 
-                        <label for="email" className="label">
+                        <label
+                            for="email"
+                            className="CreateAccount-form--label"
+                        >
                             Email address
                         </label>
                         <input
@@ -30,10 +33,13 @@ const CreateAccount = () => {
                             name="email"
                             id="email"
                             placeholder="platzi@example.com"
-                            className="input input-email"
+                            className="CreateAccount-form--input input-email"
                         />
 
-                        <label for="password" className="label">
+                        <label
+                            for="password"
+                            className="CreateAccount-form--label"
+                        >
                             Password
                         </label>
                         <input
@@ -41,7 +47,7 @@ const CreateAccount = () => {
                             name="password"
                             id="password"
                             placeholder="*********"
-                            className="input input-password"
+                            className="CreateAccount-form--input input-password"
                         />
                     </div>
 

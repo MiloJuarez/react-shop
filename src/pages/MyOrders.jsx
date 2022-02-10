@@ -1,17 +1,17 @@
 import React from "react";
 import "../styles/MyOrders.scss";
 import Title from "../components/Title";
-import Order from "../components/Order";
+import OrderItem from "../components/OrderItem";
 import ButtonOrderDetails from "../components/ButtonOrderDetails";
 
 const MyOrders = () => {
     return (
-        <div className="my-order">
-            <div className="my-order-container">
+        <div className="MyOrders">
+            <div className="MyOrders-container">
                 <Title title={"My orders"} />
 
-                <div className="my-order-content">
-                    <Order
+                <div className="MyOrders-content">
+                    <OrderItem
                         order={{
                             date: "04.25.21",
                             total_items: 3,
@@ -20,9 +20,9 @@ const MyOrders = () => {
                         canNavigateToDetails={true}
                     >
                         <ButtonOrderDetails />
-                    </Order>
+                    </OrderItem>
 
-                    <Order
+                    <OrderItem
                         order={{
                             date: "04.25.21",
                             total_items: 3,
@@ -31,9 +31,9 @@ const MyOrders = () => {
                         canNavigateToDetails={true}
                     >
                         <ButtonOrderDetails />
-                    </Order>
+                    </OrderItem>
 
-                    <Order
+                    <OrderItem
                         order={{
                             date: "04.25.21",
                             total_items: 3,
@@ -42,9 +42,9 @@ const MyOrders = () => {
                         canNavigateToDetails={true}
                     >
                         <ButtonOrderDetails />
-                    </Order>
+                    </OrderItem>
 
-                    <Order
+                    <OrderItem
                         order={{
                             date: "04.25.21",
                             total_items: 3,
@@ -53,7 +53,7 @@ const MyOrders = () => {
                         canNavigateToDetails={true}
                     >
                         <ButtonOrderDetails />
-                    </Order>
+                    </OrderItem>
                 </div>
             </div>
         </div>

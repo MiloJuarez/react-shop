@@ -1,19 +1,19 @@
-.main-container {
+.Home-container {
     width: 80%;
     margin: 50px auto;
 }
-.cards-container {
+.Home-cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
     gap: 26px;
     place-content: center;
 }
 @media (max-width: 640px) {
-    .main-container {
+    .Home-container {
         width: 100%;
         padding: 0 16px;
     }
-    .cards-container {
+    .Home-cards-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, 140px);
     }

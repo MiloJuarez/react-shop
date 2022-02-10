@@ -2,24 +2,23 @@ import React from "react";
 import "../styles/NewPassword.scss";
 import PrimaryInputSubmit from "../components/PrimaryInputSubmit";
 import Title from "../components/Title";
+import Subtitle from "../components/Subtitle";
 
 const NewPassword = () => {
     return (
-        <div className="login">
-            <div className="form-container">
+        <div className="NewPassword">
+            <div className="NewPassword-container">
                 <img
                     src="./assets/logos/logo_yard_sale.svg"
                     alt="Logo"
-                    className="logo"
+                    className="NewPassword--logo"
                 />
 
                 <Title title={"Create a new password"} />
-                <p className="subtitle">
-                    Enter a new password for your account
-                </p>
+                <Subtitle subtitle={"Enter a new password for your account"} />
 
-                <form action="/" className="form">
-                    <label for="password" className="label">
+                <form action="/" className="NewPassword-form">
+                    <label for="password" className="NewPassword-form--label">
                         Password
                     </label>
                     <input
@@ -27,10 +26,13 @@ const NewPassword = () => {
                         name="password"
                         id="password"
                         placeholder="*********"
-                        className="input input-password"
+                        className="NewPassword-form--input input-password"
                     />
 
-                    <label for="new-password" className="label">
+                    <label
+                        for="new-password"
+                        className="NewPassword-form--label"
+                    >
                         New password
                     </label>
                     <input
@@ -38,7 +40,7 @@ const NewPassword = () => {
                         name="new-password"
                         id="new-password"
                         placeholder="*********"
-                        className="input input-password"
+                        className="NewPassword-form--input input-password"
                     />
 
                     <PrimaryInputSubmit value={"Confirm"} />

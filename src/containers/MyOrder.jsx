@@ -1,17 +1,17 @@
 import React from "react";
 import "../styles/MyOrder.scss";
 import Title from "../components/Title";
-import Order from "../components/Order";
-import ProductTile from "../components/ProductTile";
+import OrderItem from "../components/OrderItem";
+import ProductItem from "../components/ProductItem";
 
 const MyOrder = () => {
     return (
-        <div className="my-order">
-            <div className="my-order-container">
+        <div className="MyOrder">
+            <div className="MyOrder-container">
                 <Title title={"My order"} />
 
-                <div className="my-order-content">
-                    <Order
+                <div className="MyOrder-content">
+                    <OrderItem
                         order={{
                             date: "04.25.21",
                             total_items: 3,
@@ -19,7 +19,7 @@ const MyOrder = () => {
                         }}
                     />
 
-                    <ProductTile
+                    <ProductItem
                         product={{
                             image: "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
                             name: "Bike",
@@ -27,7 +27,7 @@ const MyOrder = () => {
                         }}
                     />
 
-                    <ProductTile
+                    <ProductItem
                         product={{
                             image: "https://images.pexels.com/photos/4922619/pexels-photo-4922619.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
                             name: "Helmet",
@@ -35,7 +35,7 @@ const MyOrder = () => {
                         }}
                     />
 
-                    <ProductTile
+                    <ProductItem
                         product={{
                             image: "https://images.pexels.com/photos/10110754/pexels-photo-10110754.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
                             name: "Biker",

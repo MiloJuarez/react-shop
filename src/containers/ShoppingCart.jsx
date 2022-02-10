@@ -2,19 +2,19 @@ import React from "react";
 import "../styles/ShoppingCart.scss";
 import ButtonRemoveProduct from "../components/ButtonRemoveProduct";
 import PrimaryButton from "../components/PrimaryButton";
-import ProductTile from "../components/ProductTile";
+import ProductItem from "../components/ProductItem";
 import Title from "../components/Title";
 
 const ShoppingCart = () => {
     return (
-        <aside className="product-detail">
-            <div className="title-container">
+        <aside className="ShoppingCart">
+            <div className="ShoppingCart-title-container">
                 <img src="./assets/icons/arrow.svg" alt="arrow" />
                 <Title title={"My Shopping Cart"} />
             </div>
 
             <div>
-                <ProductTile
+                <ProductItem
                     product={{
                         image: "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
                         name: "Bike",
@@ -22,9 +22,9 @@ const ShoppingCart = () => {
                     }}
                 >
                     <ButtonRemoveProduct />
-                </ProductTile>
+                </ProductItem>
 
-                <ProductTile
+                <ProductItem
                     product={{
                         image: "https://images.pexels.com/photos/4922619/pexels-photo-4922619.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
                         name: "Helmet",
@@ -32,9 +32,9 @@ const ShoppingCart = () => {
                     }}
                 >
                     <ButtonRemoveProduct />
-                </ProductTile>
+                </ProductItem>
 
-                <ProductTile
+                <ProductItem
                     product={{
                         image: "https://images.pexels.com/photos/10110754/pexels-photo-10110754.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
                         name: "Biker",
@@ -42,9 +42,9 @@ const ShoppingCart = () => {
                     }}
                 >
                     <ButtonRemoveProduct />
-                </ProductTile>
+                </ProductItem>
 
-                <article className="order">
+                <article className="ShoppingCart-orderItem">
                     <p>
                         <span>Total</span>
                     </p>

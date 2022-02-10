@@ -1,10 +1,9 @@
 import React from "react";
-import "../styles/Order.scss";
-import ButtonOrderDetails from "./ButtonOrderDetails";
+import "../styles/OrderItem.scss";
 
-const Order = ({ order, children }) => {
+const OrderItem = ({ order, children }) => {
     return (
-        <article className="order">
+        <article className="OrderItem">
             <p>
                 <span>{order.date}</span>
                 <span>{order.total_items} articles</span>
@@ -15,4 +14,4 @@ const Order = ({ order, children }) => {
     );
 };
 
-export default Order;
+export default OrderItem;

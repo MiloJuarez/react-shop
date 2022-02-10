@@ -1,30 +1,31 @@
 import React from "react";
 import "../styles/Login.scss";
 import PrimaryInputSubmit from "../components/PrimaryInputSubmit";
+import SecondaryButton from "../components/SecondaryButton";
 
-const App = () => {
+const Login = () => {
     return (
-        <div class="login">
-            <div class="form-container">
+        <div class="Login">
+            <div class="Login-container">
                 <img
                     src="./assets/logos/logo_yard_sale.svg"
                     alt="Logo"
-                    class="logo"
+                    class="Login--logo"
                 />
 
-                <form action="/" class="form">
-                    <label for="email" class="label">
+                <form action="/" class="Login-form">
+                    <label for="email" class="Login-form--label">
                         Email address
                     </label>
                     <input
                         type="email"
                         name="email"
                         id="email"
-                        class="input input-email"
+                        class="Login-form--input input-email"
                         placeholder="camilayokoo@gmail.com"
                     />
 
-                    <label for="password" class="label">
+                    <label for="password" class="Login-form--label">
                         Password
                     </label>
                     <input
@@ -32,7 +33,7 @@ const App = () => {
                         name="password"
                         id="password"
                         placeholder="*********"
-                        class="input input-password"
+                        class="Login-form--input input-password"
                     />
 
                     <PrimaryInputSubmit value={"Log in"} />
@@ -40,10 +41,10 @@ const App = () => {
                     <a href="/">Forgot my password</a>
                 </form>
 
-                <button class="secondary-button signup-button">Sign up</button>
+                <SecondaryButton label={"Sign up"} />
             </div>
         </div>
     );
 };
 
-export default App;
+export default Login;

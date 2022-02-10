@@ -1,9 +1,9 @@
 import React from "react";
-import "../styles/ProductTile.scss";
+import "../styles/ProductItem.scss";
 
-const ProductTile = ({ product, children }) => {
+const ProductItem = ({ product, children }) => {
     return (
-        <article className="shopping-cart">
+        <article className="ProductItem">
             <figure>
                 <img src={product.image} alt={product.name} />
             </figure>
@@ -14,4 +14,4 @@ const ProductTile = ({ product, children }) => {
     );
 };
 
-export default ProductTile;
+export default ProductItem;

@@ -1,15 +1,15 @@
-.my-order {
+.MyOrders {
     display: grid;
     width: 100%;
     height: 100vh;
     place-items: center;
 }
-.my-order-container {
+.MyOrders-container {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
 }
-.my-order-content {
+.MyOrders-content {
     display: flex;
     flex-direction: column;
 }

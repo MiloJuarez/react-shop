@@ -5,26 +5,37 @@ import Title from "../components/Title";
 
 const AccountDetails = () => {
     return (
-        <div className="login">
-            <div className="form-container">
+        <div className="AccountDetails">
+            <div className="AccountDetails-container">
                 <Title title={"My account"} />
 
-                <form action="/" className="form">
+                <form action="/" className="AccountDetails-form">
                     <div>
-                        <label for="name" className="label">
+                        <label
+                            for="name"
+                            className="AccountDetails-form--label"
+                        >
                             Name
                         </label>
-                        <p className="value">Camila Yokoo</p>
+                        <p className="AccountDetails-form--value">
+                            Camila Yokoo
+                        </p>
 
-                        <label for="email" className="label">
+                        <label
+                            for="email"
+                            className="AccountDetails-form--label"
+                        >
                             Email address
                         </label>
                         <p className="value">camilayokoo@gmail.com</p>
 
-                        <label for="password" className="label">
+                        <label
+                            for="password"
+                            className="AccountDetails-form--label"
+                        >
                             Password
                         </label>
-                        <p className="value">*********</p>
+                        <p className="AccountDetails-form--value">*********</p>
                     </div>
 
                     <SecondaryInputSubmit value={"Edit"} />

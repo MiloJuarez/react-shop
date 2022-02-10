@@ -11,14 +11,14 @@ const NewPassword = () => {
                 <img
                     src="./assets/logos/logo_yard_sale.svg"
                     alt="Logo"
-                    className="NewPassword--logo"
+                    className="NewPassword__icon"
                 />
 
                 <Title title={"Create a new password"} />
                 <Subtitle subtitle={"Enter a new password for your account"} />
 
                 <form action="/" className="NewPassword-form">
-                    <label for="password" className="NewPassword-form--label">
+                    <label for="password" className="NewPassword-form__label">
                         Password
                     </label>
                     <input
@@ -26,12 +26,12 @@ const NewPassword = () => {
                         name="password"
                         id="password"
                         placeholder="*********"
-                        className="NewPassword-form--input input-password"
+                        className="NewPassword-form__input NewPassword-form__input--mb22"
                     />
 
                     <label
                         for="new-password"
-                        className="NewPassword-form--label"
+                        className="NewPassword-form__label"
                     >
                         New password
                     </label>
@@ -40,7 +40,7 @@ const NewPassword = () => {
                         name="new-password"
                         id="new-password"
                         placeholder="*********"
-                        className="NewPassword-form--input input-password"
+                        className="NewPassword-form__input NewPassword-form__input--mb22"
                     />
 
                     <PrimaryInputSubmit value={"Confirm"} />

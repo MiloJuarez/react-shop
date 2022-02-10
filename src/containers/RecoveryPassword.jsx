@@ -21,13 +21,13 @@ const RecoveryPassword = () => {
                     }
                 />
 
-                <div className="email-image">
+                <div className="RecoveryPassword__image">
                     <img src="./assets/icons/email.svg" alt="Email" />
                 </div>
 
                 <PrimaryButton label={"Login"} />
 
-                <p className="RecoveryPassword--resend">
+                <p className="RecoveryPassword__resend">
                     <span>Didn't receive the email?</span>
                     <a href="/">Resend</a>
                 </p>

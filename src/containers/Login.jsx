@@ -10,22 +10,22 @@ const Login = () => {
                 <img
                     src="./assets/logos/logo_yard_sale.svg"
                     alt="Logo"
-                    class="Login--logo"
+                    class="Login__icon"
                 />
 
                 <form action="/" class="Login-form">
-                    <label for="email" class="Login-form--label">
+                    <label for="email" class="Login-form__label">
                         Email address
                     </label>
                     <input
                         type="email"
                         name="email"
                         id="email"
-                        class="Login-form--input input-email"
+                        class="Login-form__input Login-form__input--mb22"
                         placeholder="camilayokoo@gmail.com"
                     />
 
-                    <label for="password" class="Login-form--label">
+                    <label for="password" class="Login-form__label">
                         Password
                     </label>
                     <input
@@ -33,12 +33,14 @@ const Login = () => {
                         name="password"
                         id="password"
                         placeholder="*********"
-                        class="Login-form--input input-password"
+                        class="Login-form__input Login-form__input--mb22"
                     />
 
                     <PrimaryInputSubmit value={"Log in"} />
 
-                    <a href="/">Forgot my password</a>
+                    <a href="/" className="Login-form__link">
+                        Forgot my password
+                    </a>
                 </form>
 
                 <SecondaryButton label={"Sign up"} />

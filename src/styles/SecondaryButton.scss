@@ -1,6 +1,6 @@
 @use "vars";
 
-.secondary-button {
+.SecondaryButton {
     width: 100%;
     height: 50px;
     font-size: var(--md);
@@ -13,7 +13,7 @@
 }
 
 @media (max-width: 640px) {
-    .secondary-button {
+    .SecondaryButton {
         position: fixed;
         bottom: 20px;
         width: inherit;

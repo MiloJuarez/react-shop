@@ -3,13 +3,13 @@
     place-items: center;
     margin-top: 20vh;
 }
-.NotFound--message {
+.NotFound__message {
     margin: 0;
     font-size: 3rem;
     font-weight: bold;
     color: var(--hospital-green);
 }
-.NotFound--message__animated {
+.NotFound__message--animated {
     font-size: 6rem;
     font-weight: lighter;
     animation-duration: 2.5s;

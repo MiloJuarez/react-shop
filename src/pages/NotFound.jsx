@@ -4,8 +4,8 @@ import "../styles/NotFound.scss";
 const NotFound = () => {
     return (
         <div class="NotFound-container">
-            <p class="NotFound--message">Recurso no encontrado :(</p>
-            <p class="NotFound--message NotFound--message__animated hinge">
+            <p class="NotFound__message">Recurso no encontrado :(</p>
+            <p class="NotFound__message NotFound__message--animated hinge">
                 404
             </p>
         </div>

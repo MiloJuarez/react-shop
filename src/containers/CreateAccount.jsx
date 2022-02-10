@@ -11,7 +11,7 @@ const CreateAccount = () => {
 
                 <form action="/" className="CreateAccount-form">
                     <div>
-                        <label for="name" className="CreateAccount-form--label">
+                        <label for="name" className="CreateAccount-form__label">
                             Name
                         </label>
                         <input
@@ -19,12 +19,12 @@ const CreateAccount = () => {
                             name="name"
                             id="name"
                             placeholder="Milo"
-                            className="CreateAccount-form--input input-name"
+                            className="CreateAccount-form__input CreateAccount-form__input--mb22"
                         />
 
                         <label
                             for="email"
-                            className="CreateAccount-form--label"
+                            className="CreateAccount-form__label"
                         >
                             Email address
                         </label>
@@ -33,12 +33,12 @@ const CreateAccount = () => {
                             name="email"
                             id="email"
                             placeholder="platzi@example.com"
-                            className="CreateAccount-form--input input-email"
+                            className="CreateAccount-form__input CreateAccount-form__input--mb22"
                         />
 
                         <label
                             for="password"
-                            className="CreateAccount-form--label"
+                            className="CreateAccount-form__label"
                         >
                             Password
                         </label>
@@ -47,7 +47,7 @@ const CreateAccount = () => {
                             name="password"
                             id="password"
                             placeholder="*********"
-                            className="CreateAccount-form--input input-password"
+                            className="CreateAccount-form__input CreateAccount-form__input--mb22"
                         />
                     </div>
 

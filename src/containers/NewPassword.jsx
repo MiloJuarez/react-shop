@@ -1,24 +1,24 @@
 import React from "react";
-import "../styles/NewPassword.scss";
-import PrimaryInputSubmit from "../components/PrimaryInputSubmit";
-import Title from "../components/Title";
-import Subtitle from "../components/Subtitle";
+import "@styles/NewPassword.scss";
+import PrimaryInputSubmit from "@components/PrimaryInputSubmit";
+import Title from "@components/Title";
+import Subtitle from "@components/Subtitle";
+import logo from "@logos/logo_yard_sale.svg";
 
 const NewPassword = () => {
     return (
         <div className="NewPassword">
             <div className="NewPassword-container">
-                <img
-                    src="./assets/logos/logo_yard_sale.svg"
-                    alt="Logo"
-                    className="NewPassword__icon"
-                />
+                <img src={logo} alt="Logo" className="NewPassword__icon" />
 
                 <Title title={"Create a new password"} />
                 <Subtitle subtitle={"Enter a new password for your account"} />
 
                 <form action="/" className="NewPassword-form">
-                    <label for="password" className="NewPassword-form__label">
+                    <label
+                        htmlFor="password"
+                        className="NewPassword-form__label"
+                    >
                         Password
                     </label>
                     <input
@@ -30,7 +30,7 @@ const NewPassword = () => {
                     />
 
                     <label
-                        for="new-password"
+                        htmlFor="new-password"
                         className="NewPassword-form__label"
                     >
                         New password

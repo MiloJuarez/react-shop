@@ -1,7 +1,7 @@
 import React from "react";
 import "@styles/ProductList.scss";
 import ProductCard from "@components/ProductCard";
-import useGetProducts from "../hooks/useGetProdutcs";
+import useGetProducts from "@hooks/useGetProdutcs";
 
 const API = "https://api.escuelajs.co/api/v1/products";
 

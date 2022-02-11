@@ -1,9 +1,11 @@
 @use "vars";
 
 .Menu {
+    position: absolute;
     width: 100px;
     height: auto;
     padding: 20px 20px 0 20px;
+    background-color: var(--white);
     border: 1px solid var(--very-light-pink);
     border-radius: 5px;
 }

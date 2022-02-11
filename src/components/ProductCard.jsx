@@ -3,10 +3,10 @@ import "@styles/ProductCard.scss";
 import addToCart from "@icons/bt_add_to_cart.svg";
 
 const ProductCard = ({ product }) => {
-    const [cart, setCart] = useState("Hola");
+    const [cart, setCart] = useState([]);
 
     const handleClick = () => {
-        setCart("Hola mundo");
+        setCart([]);
     };
 
     return (
@@ -35,7 +35,6 @@ const ProductCard = ({ product }) => {
                         className="ProductCard-info__figure--icon-add"
                     />
                 </figure>
-                {cart}
             </div>
         </article>
     );

@@ -1,7 +1,8 @@
 import React from "react";
+import arrow from "@icons/arrow.svg";
 
 const ButtonOrderDetails = () => {
-    return <img src="./assets/icons/arrow.svg" alt="Detailes" />;
+    return <img src={arrow} alt="Detailes" />;
 };
 
 export default ButtonOrderDetails;

@@ -1,15 +1,16 @@
 import React from "react";
-import "../styles/ShoppingCart.scss";
-import ButtonRemoveProduct from "../components/ButtonRemoveProduct";
-import PrimaryButton from "../components/PrimaryButton";
-import ProductItem from "../components/ProductItem";
-import Title from "../components/Title";
+import "@styles/ShoppingCart.scss";
+import ButtonRemoveProduct from "@components/ButtonRemoveProduct";
+import PrimaryButton from "@components/PrimaryButton";
+import ProductItem from "@components/ProductItem";
+import Title from "@components/Title";
+import arrowBack from "@icons/arrow.svg";
 
 const ShoppingCart = () => {
     return (
         <aside className="ShoppingCart">
             <div className="ShoppingCart__title">
-                <img src="./assets/icons/arrow.svg" alt="arrow" />
+                <img src={arrowBack} alt="arrow" />
                 <Title title={"My Shopping Cart"} />
             </div>
 

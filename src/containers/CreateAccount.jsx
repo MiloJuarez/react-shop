@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/CreateAccount.scss";
-import PrimaryInputSubmit from "../components/PrimaryInputSubmit";
-import Title from "../components/Title";
+import "@styles/CreateAccount.scss";
+import PrimaryInputSubmit from "@components/PrimaryInputSubmit";
+import Title from "@components/Title";
 
 const CreateAccount = () => {
     return (

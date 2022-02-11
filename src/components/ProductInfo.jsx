@@ -6,8 +6,8 @@ const ProductInfo = ({ product }) => {
     return (
         <>
             <img
-                src={product.image}
-                alt={product.name}
+                src={product.image[0]}
+                alt={product.title}
                 className="ProductInfo__image"
             />
             <div className="ProductInfo">
@@ -15,7 +15,7 @@ const ProductInfo = ({ product }) => {
                     ${product.price}
                 </p>
                 <p className="ProductInfo__text ProductInfo__text--medium ProductInfo__text--bold ProductInfo__text--light ProductInfo__text--mb36">
-                    {product.name}
+                    {product.title}
                 </p>
                 <p className="ProductInfo__text ProductInfo__text--small ProductInfo__text--mb36">
                     {product.description}

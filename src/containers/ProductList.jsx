@@ -1,106 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "@styles/ProductList.scss";
 import ProductCard from "@components/ProductCard";
+import axios from "axios";
+
+const API = "https://api.escuelajs.co/api/v1/products";
 
 const ProductList = () => {
+    const [products, setProducts] = useState([]);
+
+    useEffect(async () => {
+        const response = await axios(API);
+        setProducts(response.data);
+    }, []);
+
     return (
         <section className="ProductList-container">
             <div className="ProductList-cards">
-                <ProductCard
-                    product={{
-                        image: "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                        name: "Bike",
-                        price: 60.0,
-                    }}
-                />
-
-                <ProductCard
-                    product={{
-                        image: "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                        name: "Bike",
-                        price: 60.0,
-                    }}
-                />
-
-                <ProductCard
-                    product={{
-                        image: "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                        name: "Bike",
-                        price: 60.0,
-                    }}
-                />
-
-                <ProductCard
-                    product={{
-                        image: "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                        name: "Bike",
-                        price: 60.0,
-                    }}
-                />
-
-                <ProductCard
-                    product={{
-                        image: "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                        name: "Bike",
-                        price: 60.0,
-                    }}
-                />
-
-                <ProductCard
-                    product={{
-                        image: "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                        name: "Bike",
-                        price: 60.0,
-                    }}
-                />
-
-                <ProductCard
-                    product={{
-                        image: "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                        name: "Bike",
-                        price: 60.0,
-                    }}
-                />
-
-                <ProductCard
-                    product={{
-                        image: "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                        name: "Bike",
-                        price: 60.0,
-                    }}
-                />
-
-                <ProductCard
-                    product={{
-                        image: "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                        name: "Bike",
-                        price: 60.0,
-                    }}
-                />
-
-                <ProductCard
-                    product={{
-                        image: "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                        name: "Bike",
-                        price: 60.0,
-                    }}
-                />
-
-                <ProductCard
-                    product={{
-                        image: "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                        name: "Bike",
-                        price: 60.0,
-                    }}
-                />
-
-                <ProductCard
-                    product={{
-                        image: "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                        name: "Bike",
-                        price: 60.0,
-                    }}
-                />
+                {products.map((product) => (
+                    <ProductCard product={product} key={product.id} />
+                ))}
             </div>
         </section>
     );

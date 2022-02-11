@@ -12,8 +12,8 @@ const ProductCard = ({ product }) => {
     return (
         <article className="ProductCard">
             <img
-                src={product.image}
-                alt={product.name}
+                src={product.images[0]}
+                alt={product.title}
                 className="ProductCard__image"
             />
             <div className="ProductCard-info">
@@ -22,7 +22,7 @@ const ProductCard = ({ product }) => {
                         ${product.price}
                     </p>
                     <p className="ProductCard-info__text ProductCard-info__text--gray">
-                        {product.name}
+                        {product.title}
                     </p>
                 </div>
                 <figure

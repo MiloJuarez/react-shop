@@ -1,6 +1,6 @@
 import React from "react";
-import ProductCard from "../components/ProductCard";
-import "../styles/Home.scss";
+import ProductCard from "@components/ProductCard";
+import "@styles/Home.scss";
 
 const Home = () => {
     return (

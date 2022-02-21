@@ -8,7 +8,7 @@ import Title from "@components/Title";
 import arrowBack from "@icons/arrow.svg";
 
 const ShoppingCart = () => {
-    const { state } = useContext(AppContext);
+    const { state, removeFromCart } = useContext(AppContext);
 
     const sumTotal = () => {
         const reducer = (acumulador, currentValue) =>
@@ -30,7 +30,9 @@ const ShoppingCart = () => {
                         product={product}
                         key={`productItem-${product.id}`}
                     >
-                        <ButtonRemoveProduct />
+                        <ButtonRemoveProduct
+                            handleClick={() => removeFromCart(product)}
+                        />
                     </ProductItem>
                 ))}
 

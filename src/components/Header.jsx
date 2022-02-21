@@ -4,10 +4,12 @@ import Menu from "@components/Menu";
 import AppContext from "@context/AppContext";
 import menu from "@icons/icon_menu.svg";
 import logo from "@logos/logo_yard_sale.svg";
-import shoppingCart from "@icons/icon_shopping_cart.svg";
+import shoppingCartIcon from "@icons/icon_shopping_cart.svg";
+import ShoppingCart from "@containers/ShoppingCart";
 
 const Header = () => {
     const [toggle, setToggle] = useState(false);
+    const [toggleOrders, setToggleOrders] = useState(false);
     const { state } = useContext(AppContext);
 
     const handleToggle = () => {
@@ -57,14 +59,18 @@ const Header = () => {
                     <li className="Navbar-right__email" onClick={handleToggle}>
                         platzi@example.com
                     </li>
-                    <li className="Navbar-right__cart">
-                        <img src={shoppingCart} alt="cart" />
+                    <li
+                        className="Navbar-right__cart"
+                        onClick={() => setToggleOrders(!toggleOrders)}
+                    >
+                        <img src={shoppingCartIcon} alt="cart" />
                         {state.cart.length > 0 ? (
                             <div>{state.cart.length}</div>
                         ) : null}
                     </li>
                 </ul>
                 {toggle && <Menu />}
+                {toggleOrders && <ShoppingCart />}
             </div>
         </nav>
     );

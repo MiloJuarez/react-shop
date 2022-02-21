@@ -1,9 +1,17 @@
 @use "vars";
 
 .Navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
+    box-sizing: border-box;
+    width: 100%;
     justify-content: space-between;
     padding: 0 24px;
+    margin-bottom: 16px;
+    background-color: var(--white);
     border-bottom: 1px solid var(--very-light-pink);
 }
 .Navbar__menu {
@@ -49,6 +57,7 @@
 }
 .Navbar-right__cart {
     position: relative;
+    cursor: pointer;
 }
 .Navbar-right__cart div {
     position: absolute;

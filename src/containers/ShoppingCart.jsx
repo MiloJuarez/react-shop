@@ -9,6 +9,14 @@ import arrowBack from "@icons/arrow.svg";
 
 const ShoppingCart = () => {
     const { state } = useContext(AppContext);
+
+    const sumTotal = () => {
+        const reducer = (acumulador, currentValue) =>
+            acumulador + currentValue.price;
+        const sum = state.cart.reduce(reducer, 0);
+        return sum;
+    };
+
     return (
         <aside className="ShoppingCart">
             <div className="ShoppingCart__title">
@@ -33,7 +41,7 @@ const ShoppingCart = () => {
                         </span>
                     </p>
                     <p className="ShoppingCart-orderItem__text ShoppingCart-orderItem__text--end">
-                        $115.00
+                        ${sumTotal()}
                     </p>
                 </article>
 

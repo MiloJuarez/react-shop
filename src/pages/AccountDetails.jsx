@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/AccountDetails.scss";
-import SecondaryInputSubmit from "../components/SecondaryInputSubmit";
-import Title from "../components/Title";
+import "@styles/AccountDetails.scss";
+import SecondaryInputSubmit from "@components/SecondaryInputSubmit";
+import Title from "@components/Title";
 
 const AccountDetails = () => {
     return (
@@ -12,7 +12,7 @@ const AccountDetails = () => {
                 <form action="/" className="AccountDetails-form">
                     <div>
                         <label
-                            for="name"
+                            htmlFor="name"
                             className="AccountDetails-form--label"
                         >
                             Name
@@ -22,7 +22,7 @@ const AccountDetails = () => {
                         </p>
 
                         <label
-                            for="email"
+                            htmlFor="email"
                             className="AccountDetails-form--label"
                         >
                             Email address
@@ -30,7 +30,7 @@ const AccountDetails = () => {
                         <p className="value">camilayokoo@gmail.com</p>
 
                         <label
-                            for="password"
+                            htmlFor="password"
                             className="AccountDetails-form--label"
                         >
                             Password

@@ -1,9 +1,16 @@
+@use "vars";
+
 .ShoppingCart {
-    position: absolute;
+    position: fixed;
     right: 0;
     width: 360px;
+    height: 100vh;
     padding: 24px;
     box-sizing: border-box;
+    background-color: var(--white);
+    border-radius: 6px;
+    border: 1px solid var(--very-light-pink);
+    overflow: auto;
 }
 .ShoppingCart__title {
     display: flex;
@@ -11,6 +18,12 @@
 .ShoppingCart__title img {
     transform: rotate(180deg);
     margin-right: 14px;
+}
+.ShoppingCart__title .Title {
+    margin-bottom: 15px;
+}
+.ShoppingCart__container {
+    padding-bottom: 24px;
 }
 .ShoppingCart-orderItem--flex {
     display: grid;

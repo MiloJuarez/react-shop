@@ -1,8 +1,8 @@
 import React from "react";
-import "../styles/MyOrders.scss";
-import Title from "../components/Title";
-import OrderItem from "../components/OrderItem";
-import ButtonOrderDetails from "../components/ButtonOrderDetails";
+import "@styles/MyOrders.scss";
+import Title from "@components/Title";
+import OrderItem from "@components/OrderItem";
+import ButtonOrderDetails from "@components/ButtonOrderDetails";
 
 const MyOrders = () => {
     return (

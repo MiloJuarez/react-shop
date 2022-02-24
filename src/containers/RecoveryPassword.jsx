@@ -1,18 +1,16 @@
 import React from "react";
-import "../styles/RecoveryPassword.scss";
-import PrimaryButton from "../components/PrimaryButton";
-import Subtitle from "../components/Subtitle";
-import Title from "../components/Title";
+import "@styles/RecoveryPassword.scss";
+import PrimaryButton from "@components/PrimaryButton";
+import Subtitle from "@components/Subtitle";
+import Title from "@components/Title";
+import logo from "@logos/logo_yard_sale.svg";
+import email from "@icons/email.svg";
 
 const RecoveryPassword = () => {
     return (
         <div className="RecoveryPassword">
             <div className="RecoveryPassword-container">
-                <img
-                    src="./assets/logos/logo_yard_sale.svg"
-                    alt="Logo"
-                    className="RecoveryPassword--logo"
-                />
+                <img src={logo} alt="Logo" className="RecoveryPassword--logo" />
 
                 <Title />
                 <Subtitle
@@ -22,7 +20,7 @@ const RecoveryPassword = () => {
                 />
 
                 <div className="RecoveryPassword__image">
-                    <img src="./assets/icons/email.svg" alt="Email" />
+                    <img src={email} alt="Email" />
                 </div>
 
                 <PrimaryButton label={"Login"} />

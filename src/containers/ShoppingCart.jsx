@@ -1,48 +1,40 @@
-import React from "react";
-import "../styles/ShoppingCart.scss";
-import ButtonRemoveProduct from "../components/ButtonRemoveProduct";
-import PrimaryButton from "../components/PrimaryButton";
-import ProductItem from "../components/ProductItem";
-import Title from "../components/Title";
+import React, { useContext } from "react";
+import "@styles/ShoppingCart.scss";
+import AppContext from "@context/AppContext";
+import ButtonRemoveProduct from "@components/ButtonRemoveProduct";
+import PrimaryButton from "@components/PrimaryButton";
+import ProductItem from "@components/ProductItem";
+import Title from "@components/Title";
+import arrowBack from "@icons/arrow.svg";
 
 const ShoppingCart = () => {
+    const { state, removeFromCart } = useContext(AppContext);
+
+    const sumTotal = () => {
+        const reducer = (acumulador, currentValue) =>
+            acumulador + currentValue.price;
+        const sum = state.cart.reduce(reducer, 0);
+        return sum;
+    };
+
     return (
         <aside className="ShoppingCart">
             <div className="ShoppingCart__title">
-                <img src="./assets/icons/arrow.svg" alt="arrow" />
+                <img src={arrowBack} alt="arrow" />
                 <Title title={"My Shopping Cart"} />
             </div>
 
-            <div>
-                <ProductItem
-                    product={{
-                        image: "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                        name: "Bike",
-                        price: 60.0,
-                    }}
-                >
-                    <ButtonRemoveProduct />
-                </ProductItem>
-
-                <ProductItem
-                    product={{
-                        image: "https://images.pexels.com/photos/4922619/pexels-photo-4922619.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                        name: "Helmet",
-                        price: 15.0,
-                    }}
-                >
-                    <ButtonRemoveProduct />
-                </ProductItem>
-
-                <ProductItem
-                    product={{
-                        image: "https://images.pexels.com/photos/10110754/pexels-photo-10110754.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                        name: "Biker",
-                        price: 40.0,
-                    }}
-                >
-                    <ButtonRemoveProduct />
-                </ProductItem>
+            <div className="ShoppingCart__container">
+                {state.cart.map((product) => (
+                    <ProductItem
+                        product={product}
+                        key={`productItem-${product.id}`}
+                    >
+                        <ButtonRemoveProduct
+                            handleClick={() => removeFromCart(product)}
+                        />
+                    </ProductItem>
+                ))}
 
                 <article className="ShoppingCart-orderItem--flex">
                     <p className="ShoppingCart-orderItem__text">
@@ -51,7 +43,7 @@ const ShoppingCart = () => {
                         </span>
                     </p>
                     <p className="ShoppingCart-orderItem__text ShoppingCart-orderItem__text--end">
-                        $115.00
+                        ${sumTotal()}
                     </p>
                 </article>
 

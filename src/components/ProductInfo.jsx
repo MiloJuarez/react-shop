@@ -1,12 +1,13 @@
 import React from "react";
-import "../styles/ProductInfo.scss";
+import "@styles/ProductInfo.scss";
+import addToCard from "@icons/bt_add_to_cart.svg";
 
 const ProductInfo = ({ product }) => {
     return (
         <>
             <img
-                src={product.image}
-                alt={product.name}
+                src={product.image[0]}
+                alt={product.title}
                 className="ProductInfo__image"
             />
             <div className="ProductInfo">
@@ -14,16 +15,13 @@ const ProductInfo = ({ product }) => {
                     ${product.price}
                 </p>
                 <p className="ProductInfo__text ProductInfo__text--medium ProductInfo__text--bold ProductInfo__text--light ProductInfo__text--mb36">
-                    {product.name}
+                    {product.title}
                 </p>
                 <p className="ProductInfo__text ProductInfo__text--small ProductInfo__text--mb36">
                     {product.description}
                 </p>
                 <button className="ProductInfo__button ProductInfo__button--flex">
-                    <img
-                        src="./assets/icons/bt_add_to_cart.svg"
-                        alt="add to cart"
-                    />
+                    <img src={addToCard} alt="add to cart" />
                     Add to cart
                 </button>
             </div>

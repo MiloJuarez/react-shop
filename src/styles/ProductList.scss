@@ -1,6 +1,7 @@
 .ProductList-container {
-    width: 80%;
+    width: 80vw;
     margin: 50px auto;
+    box-sizing: border-box;
 }
 .ProductList-cards {
     display: grid;

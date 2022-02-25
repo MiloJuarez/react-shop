@@ -7,7 +7,7 @@ import ProductItem from "@components/ProductItem";
 import Title from "@components/Title";
 import arrowBack from "@icons/arrow.svg";
 
-const ShoppingCart = () => {
+const ShoppingCart = ({ onTapBack }) => {
     const { state, removeFromCart } = useContext(AppContext);
 
     const sumTotal = () => {
@@ -20,7 +20,7 @@ const ShoppingCart = () => {
     return (
         <aside className="ShoppingCart">
             <div className="ShoppingCart__title">
-                <img src={arrowBack} alt="arrow" />
+                <img src={arrowBack} alt="arrow" onClick={onTapBack} />
                 <Title title={"My Shopping Cart"} />
             </div>
 

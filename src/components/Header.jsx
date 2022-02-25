@@ -70,7 +70,11 @@ const Header = () => {
                     </li>
                 </ul>
                 {toggle && <Menu />}
-                {toggleOrders && <ShoppingCart />}
+                {toggleOrders && (
+                    <ShoppingCart
+                        onTapBack={() => setToggleOrders(!toggleOrders)}
+                    />
+                )}
             </div>
         </nav>
     );

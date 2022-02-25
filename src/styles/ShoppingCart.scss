@@ -17,7 +17,9 @@
 }
 .ShoppingCart__title img {
     transform: rotate(180deg);
-    margin-right: 14px;
+    padding: 0 8px;
+    margin-right: 8px;
+    cursor: pointer;
 }
 .ShoppingCart__title .Title {
     margin-bottom: 15px;

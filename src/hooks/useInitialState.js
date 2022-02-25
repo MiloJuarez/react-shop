@@ -21,10 +21,19 @@ const useInitialState = () => {
         });
     };
 
+    const inCart = (payload) => {
+        const items = state.cart.find((item) => item.id == payload.id);
+        if (items) {
+            return true;
+        }
+        return false;
+    };
+
     return {
         state,
         addToCart,
         removeFromCart,
+        inCart,
     };
 };
 

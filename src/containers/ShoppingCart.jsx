@@ -36,18 +36,20 @@ const ShoppingCart = () => {
                     </ProductItem>
                 ))}
 
-                <article className="ShoppingCart-orderItem--flex">
-                    <p className="ShoppingCart-orderItem__text">
-                        <span className="ShoppingCart-orderItem__text--medium">
-                            Total
-                        </span>
-                    </p>
-                    <p className="ShoppingCart-orderItem__text ShoppingCart-orderItem__text--end">
-                        ${sumTotal()}
-                    </p>
-                </article>
+                <div className="ShoppingCart__ca">
+                    <article className="ShoppingCart-orderItem--flex">
+                        <p className="ShoppingCart-orderItem__text">
+                            <span className="ShoppingCart-orderItem__text--medium">
+                                Total
+                            </span>
+                        </p>
+                        <p className="ShoppingCart-orderItem__text ShoppingCart-orderItem__text--end">
+                            ${sumTotal()}
+                        </p>
+                    </article>
 
-                <PrimaryButton label={"Checkout"} />
+                    <PrimaryButton label={"Checkout"} />
+                </div>
             </div>
         </aside>
     );

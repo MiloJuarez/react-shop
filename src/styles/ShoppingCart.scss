@@ -23,11 +23,12 @@
     margin-bottom: 15px;
 }
 .ShoppingCart__container {
-    padding-bottom: 24px;
+    position: relative;
+    padding-bottom: 200px;
 }
 .ShoppingCart-orderItem--flex {
     display: grid;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     padding: 0 24px;
     grid-template-columns: auto 1fr;
     gap: 16px;
@@ -43,6 +44,14 @@
 }
 .ShoppingCart-orderItem__text--end {
     text-align: end;
+}
+.ShoppingCart__ca {
+    position: fixed;
+    bottom: 0;
+    width: calc(360px - 48px);
+    padding-top: 8px;
+    background-color: var(--white);
+    border-top: 1px solid var(--very-light-pink);
 }
 @media (max-width: 640px) {
     .ShoppingCart {

@@ -37,10 +37,10 @@
     height: 35px;
     border-radius: 50%;
     border: 1px solid var(--hospital-green);
-    cursor: pointer;
 }
 .ProductCard-info__figure--icon-add {
     box-shadow: 2px 4px 8px var(--very-light-pink);
+    cursor: pointer;
 }
 @media (max-width: 640px) {
     .ProductCard {
